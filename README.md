@@ -31,18 +31,33 @@ A simple web app to help EV users:
 ## Screenshots
 
 ### Home
+This is the landing page of the application.
+It gives a quick overview of the platform and direct navigation to key modules.
+Users can jump to station search or route planning in one click.
 ![Home](image/Output/Screenshot%202026-04-15%20144053.png)
 
 ### Station Search
+This screen helps users find nearby EV charging stations.
+The user enters a location and distance radius, then the map displays matching stations.
+Each marker provides quick station details for easier decision making.
 ![Station Search](image/Output/Screenshot%202026-04-15%20152907.png)
 
 ### Route Planner
+This page calculates a route between starting point and destination.
+It shows the route path on map along with travel distance, time, and EV-related summary values.
+The layout is designed for quick route checks before a trip.
 ![Route Planner](image/Output/Screenshot%202026-04-15%20153323.png)
 
 ### Traffic Map
+This dashboard focuses on live traffic conditions.
+Users can toggle traffic incidents and traffic flow layers to understand road status.
+It also includes incident list details and a bounding-box option for focused analysis.
 ![Traffic Map](image/Output/Screenshot%202026-04-15%20153657.png)
 
 ### Features and Quick Guide
+This section summarizes the three core modules of the project.
+It gives a short guided flow for first-time users to understand how to use the app.
+The cards and quick guide keep the experience simple and easy to follow.
 ![Features](image/Output/Screenshot%202026-04-15%20152742.png)
 
 ## Run Locally
