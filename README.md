@@ -1,32 +1,59 @@
-# EV-charging-station-locater
-## EV charging:
-EV charging involves supply of direct current (DC) to the battery pack. As electricity distribution systems supply alternate current (AC) power, a converter is required to provide DC power to the battery.<br>
-The website aims at providing a user-friendly interface which can be accessed by any user without any limitations. Since the use of Electric vehicles have been increased the need for station locators have become a neccessaary aspect to travel through without any hassels. The website provides assistance in finding the best possible station in and around the place specified.
-# Home Page
+# EV Charging Station Locator
 
-![WhatsApp Image 2022-10-16 at 2 52 58 PM](https://user-images.githubusercontent.com/92366931/196028187-0cae488a-f6e0-4026-bd5a-3496d294f796.jpeg)
-![WhatsApp Image 2022-10-16 at 2 54 27 PM](https://user-images.githubusercontent.com/92366931/196028194-fc2634f7-b4f5-43c0-bdba-30b79d854dd8.jpeg)
-![WhatsApp Image 2022-10-16 at 2 56 04 PM (1)](https://user-images.githubusercontent.com/92366931/196028332-1e804a8e-d9f1-4cad-80c3-3d5ed14601fb.jpeg)
+A simple web app to help EV users:
+- find nearby charging stations,
+- plan routes between two locations,
+- and check live traffic layers on an interactive map.
 
-# Features of the website
+## Features
 
-### 1.EV Charging Locator
+- `Home`: quick intro, feature cards, and navigation.
+- `Station Search`: search charging stations by location and distance radius.
+- `Route Planner`: calculate route between start and destination with EV route summary.
+- `Traffic Map`: view traffic incidents and traffic flow layers with incident details.
 
-The main feature of the website which enables easy access to EV charging station in and around the location the user enters.
+## Tech Stack
 
-![WhatsApp Image 2022-10-16 at 3 11 34 PM](https://user-images.githubusercontent.com/92366931/196028704-2683fd07-ddd0-4eea-83ad-e761720fc5c1.jpeg)
+- HTML, CSS, JavaScript
+- [TomTom Maps SDK for Web](https://developer.tomtom.com/maps-sdk-web)
+- TomTom Search / Routing / Traffic services
+- Bootstrap (used in traffic page UI)
 
-### 2.Map Routing
+## Project Structure
 
-The feature of the website which enables the user to enroute his journey by specifing the his current loction and the the destination. 
+- `home.html` - landing page
+- `ev_search.html`, `ev_search.js` - charging station search
+- `ev_routing.html`, `ev_routing.js` - EV route planning
+- `traffic.html`, `traffic.js`, `styles.css` - traffic dashboard
+- `chargingAvailability.js`, `calculateLongDistanceEVRoute.js`, `ev_model.js` - EV helper logic
+- `image/` - static images used by pages
 
-![WhatsApp Image 2022-10-16 at 3 13 23 PM](https://user-images.githubusercontent.com/92366931/196028735-4f6ec2fe-23df-4863-bfba-46d40885c554.jpeg)
+## Screenshots
 
-### 3. Traffic Detection
+### Home
+![Home](image/Output/Screenshot%202026-04-15%20144053.png)
 
-The feature of the website which determines the current traffic status around the specified loction based on the the radius of area mentioned by the user. 
+### Station Search
+![Station Search](image/Output/Screenshot%202026-04-15%20152907.png)
 
-![WhatsApp Image 2022-10-16 at 3 16 13 PM](https://user-images.githubusercontent.com/92366931/196028829-578cb152-0f60-40e6-a72c-dcf76de4b5cf.jpeg)
+### Route Planner
+![Route Planner](image/Output/Screenshot%202026-04-15%20153323.png)
 
-##### The above three features illustrated above depicts the three stages from which the user can inherit the needed information about the electric charging station and find the best route to reach the EV charging station from the website 
+### Traffic Map
+![Traffic Map](image/Output/Screenshot%202026-04-15%20153657.png)
+
+### Features and Quick Guide
+![Features](image/Output/Screenshot%202026-04-15%20152742.png)
+
+## Run Locally
+
+1. Clone the repository.
+2. Open the project folder.
+3. Run with any static server (or open `home.html` directly for basic UI testing).
+4. Start from `home.html` and navigate to each module.
+
+## Notes
+
+- The current JavaScript files include API keys directly. For production, move keys to a secure backend or environment-based setup.
+- Some pages use different visual styles; this is expected based on current implementation.
 
